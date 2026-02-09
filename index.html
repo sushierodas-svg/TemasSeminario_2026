@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seminario 2026 - Ciudadanía | Colegio Escolaris</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #f0f8ff 0%, #ffffff 100%);
+            padding: 20px;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 40px;
+            padding: 30px 20px;
+            background: linear-gradient(135deg, #244b5a 0%, #244b5a 100%);
+            border-radius: 15px;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+        }
+
+        h1 {
+            color: #ffffff;
+            font-size: 2.5em;
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+
+        .subtitle {
+            color: #f7be00;
+            font-size: 1.3em;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+
+        .theme {
+            color: #db6015;
+            font-size: 1.1em;
+            background: #ffffff;
+            display: inline-block;
+            padding: 10px 25px;
+            border-radius: 25px;
+            margin-top: 15px;
+            font-weight: bold;
+        }
+
+        .ambitos-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 25px;
+            margin-bottom: 30px;
+        }
+
+        .ambito-card {
+            background: #ffffff;
+            border-radius: 15px;
+            padding: 25px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            border-left: 6px solid;
+        }
+
+        .ambito-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+        }
+
+        .ambito-card.azul {
+            border-left-color: #244b5a;
+        }
+
+        .ambito-card.amarillo {
+            border-left-color: #f7be00;
+        }
+
+        .ambito-card.rojo {
+            border-left-color: #993921;
+        }
+
+        .ambito-card.verde {
+            border-left-color: #2d8659;
+        }
+
+        .ambito-header {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+            padding-bottom: 15px;
+            border-bottom: 2px solid #f0f8ff;
+        }
+
+        .ambito-numero {
+            font-size: 1.5em;
+            font-weight: bold;
+            margin-right: 10px;
+            padding: 8px 15px;
+            border-radius: 8px;
+            color: #ffffff;
+        }
+
+        .azul .ambito-numero {
+            background: #244b5a;
+        }
+
+        .amarillo .ambito-numero {
+            background: #f7be00;
+            color: #244b5a;
+        }
+
+        .rojo .ambito-numero {
+            background: #993921;
+        }
+
+        .verde .ambito-numero {
+            background: #2d8659;
+        }
+
+        .ambito-title {
+            font-size: 1.1em;
+            font-weight: bold;
+            color: #244b5a;
+            flex: 1;
+        }
+
+        .equipo {
+            background: #f0f8ff;
+            padding: 15px;
+            border-radius: 10px;
+            margin-bottom: 15px;
+        }
+
+        .equipo:last-child {
+            margin-bottom: 0;
+        }
+
+        .equipo-name {
+            font-weight: bold;
+            color: #244b5a;
+            margin-bottom: 8px;
+            font-size: 1em;
+        }
+
+        .equipo-tema {
+            color: #333;
+            font-size: 0.95em;
+            line-height: 1.5;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 40px;
+            padding: 20px;
+            color: #244b5a;
+            font-size: 0.9em;
+        }
+
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 1.8em;
+            }
+
+            .subtitle {
+                font-size: 1.1em;
+            }
+
+            .theme {
+                font-size: 1em;
+                padding: 8px 20px;
+            }
+
+            .ambitos-grid {
+                grid-template-columns: 1fr;
+                gap: 20px;
+            }
+
+            .ambito-header {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            .ambito-numero {
+                margin-bottom: 10px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            body {
+                padding: 10px;
+            }
+
+            header {
+                padding: 20px 15px;
+            }
+
+            h1 {
+                font-size: 1.5em;
+            }
+
+            .ambito-card {
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Seminario 2026</h1>
+            <div class="subtitle">Tema General: Ciudadanía</div>
+            <div class="theme">Tema Eje: Derechos Humanos</div>
+        </header>
+
+        <div class="ambitos-grid">
+            <!-- ÁMBITO 1 -->
+            <div class="ambito-card azul">
+                <div class="ambito-header">
+                    <div class="ambito-numero">1</div>
+                    <div class="ambito-title">Ciudadanía como herramienta para el goce de los Derechos Humanos</div>
+                </div>
+                <div class="equipo">
+                    <div class="equipo-name">Equipo 1</div>
+                    <div class="equipo-tema">Ciudadanía digital y derechos humanos en redes sociales (ciberacoso, libertad de expresión, discurso de odio)</div>
+                </div>
+                <div class="equipo">
+                    <div class="equipo-name">Equipo 2</div>
+                    <div class="equipo-tema">Derecho a la educación en modalidad virtual: brecha digital y oportunidades</div>
+                </div>
+            </div>
+
+            <!-- ÁMBITO 2 -->
+            <div class="ambito-card amarillo">
+                <div class="ambito-header">
+                    <div class="ambito-numero">2</div>
+                    <div class="ambito-title">Impacto de la corrupción en los derechos económicos, sociales y culturales</div>
+                </div>
+                <div class="equipo">
+                    <div class="equipo-name">Equipo 3</div>
+                    <div class="equipo-tema">Corrupción y derecho a la educación: consecuencias en la calidad educativa</div>
+                </div>
+                <div class="equipo">
+                    <div class="equipo-name">Equipo 4</div>
+                    <div class="equipo-tema">Corrupción y derecho a la salud: impacto en servicios y atención</div>
+                </div>
+            </div>
+
+            <!-- ÁMBITO 3 -->
+            <div class="ambito-card rojo">
+                <div class="ambito-header">
+                    <div class="ambito-numero">3</div>
+                    <div class="ambito-title">Prevención de la violencia como medio para la protección de los derechos humanos</div>
+                </div>
+                <div class="equipo">
+                    <div class="equipo-name">Equipo 5</div>
+                    <div class="equipo-tema">Ciberbullying como forma de violencia y violación de derechos humanos</div>
+                </div>
+                <div class="equipo">
+                    <div class="equipo-name">Equipo 6</div>
+                    <div class="equipo-tema">Violencia intrafamiliar y derechos humanos: prevención y rutas de apoyo</div>
+                </div>
+            </div>
+
+            <!-- ÁMBITO 4 -->
+            <div class="ambito-card verde">
+                <div class="ambito-header">
+                    <div class="ambito-numero">4</div>
+                    <div class="ambito-title">Educación financiera en la protección de los derechos económicos</div>
+                </div>
+                <div class="equipo">
+                    <div class="equipo-name">Equipo 7</div>
+                    <div class="equipo-tema">Estafas digitales, fraudes y educación financiera como protección del patrimonio</div>
+                </div>
+            </div>
+        </div>
+
+        <footer>
+            <strong>Colegio Escolaris</strong> | Seminario 2026
+        </footer>
+    </div>
+</body>
+</html>
